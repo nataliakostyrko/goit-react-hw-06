@@ -1,0 +1,39 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  & span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+  }
+}
+
+.input {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: black;
+  height: 40px;
+  width: 380px;
+  &:focus,
+  &:hover {
+    outline: 0.5px solid;
+    box-shadow: none;
+  }
+}
+
+.error {
+  color: red;
+  font-weight: 500;
+  margin: 0;
+}

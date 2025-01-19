@@ -1,0 +1,29 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px 20px;
+  align-items: flex-start;
+  border-radius: 8px;
+
+  && input {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: black;
+    height: 40px;
+    width: 380px;
+    &:focus,
+    &:hover {
+      outline: 0.5px solid;
+      box-shadow: none;
+    }
+  }
+}
+
+.textSearch {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+}
