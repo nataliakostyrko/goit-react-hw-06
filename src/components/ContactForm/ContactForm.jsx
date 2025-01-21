@@ -47,17 +47,32 @@ const dispatch = useDispatch();
       validationSchema={FeedbackSchema}
     >
       <Form className={css.form}>
-        <label htmlFor="name" className={css.label}>
-          <span>Name</span>
-          <Field name="name" className={css.input} type="text" />
-          <ErrorMessage name="name" component="p" className={css.error} />
-        </label>
-        <label htmlFor="number" className={css.label}>
-          <span>Number</span>
-          <Field name="number" className={css.input} type="text" />
-          <ErrorMessage name="number" component="p" className={css.error} />
-        </label>
-        <button className={css.button} type="submit">
+        <label className={css.label}>Name</label>
+        <Field
+          name="name"
+          className={css.input}
+          type="text"
+          placeholder="Enter new contact name"
+        />
+        <ErrorMessage
+          name="name"
+          component="span"
+          className={css.error} />
+        <label className={css.label}>Number</label>
+        <Field
+          name="number"
+          className={css.input}
+          type="text"
+          placeholder="Enter new contact phone"
+        />
+        <ErrorMessage
+          name="number"
+          component="span"
+          className={css.error}
+        />
+        <button
+          className={css.button}
+          type="submit">
           Add contact
         </button>
       </Form>

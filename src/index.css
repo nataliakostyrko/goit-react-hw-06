@@ -2,13 +2,28 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(18, 17, 17, 0.87);
+  background-color: #f3f0f0;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 
-/* Reset styles */
+  min-width: 320px;
+  min-height: 100vh;
+
+
+  background: linear-gradient(62deg, #8ea2fc 0%, #e0c3fc 100%);
+}
+
 h1,
 h2,
 h3,
@@ -19,33 +34,13 @@ p {
   margin: 0;
 }
 
-p:last-child {
+ul {
+  margin-top: 0;
   margin-bottom: 0;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding: 0;
+  padding-left: 0;
   list-style: none;
 }
 
-a {
-  color: currentColor;
-  text-decoration: none;
-}
-
-button {
-  cursor: pointer;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.friend-list {
-  display: flex;
-  height: 768px;
-  margin: 0 auto;
+li {
+  list-style: none;
 }

@@ -1,30 +1,29 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
   padding: 20px;
-  border-radius: 8px;
+  border: 2px solid #FFDAB9;
+  border-radius: 10px;
+  background-color: #ffffff;
 }
 
 .label {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  align-items: flex-start;
-  & span {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: black;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 10px;
   }
-}
+
 
 .input {
-  font-size: 1.2rem;
-  padding: 10px 20px;
-  border-radius: 8px;
+  font-size: 16px;
+  padding: 10px;
+  width: 350px;
+  outline: none;
+  background-color: transparent;
   color: black;
-  height: 40px;
-  width: 380px;
+  border: 2px solid #ff69b4;
+  border-radius: 5px;
+ 
   &:focus,
   &:hover {
     outline: 0.5px solid;
@@ -35,5 +34,23 @@
 .error {
   color: red;
   font-weight: 500;
-  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.button {
+  width: 150px;
+  align-items: center;
+  background: linear-gradient(144deg, #ff69b4, #f342ea 50%, #1000eb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 20px;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 30px;
 }

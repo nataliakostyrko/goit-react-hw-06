@@ -1,0 +1,16 @@
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contactList:last-child {
+  margin-bottom: 20px;
+}
+
+.contactItem {
+  border: 2px solid #f342cd;
+  border-radius: 5px;
+  padding: 15px 10px;
+  background-color: #ffffff;
+}
